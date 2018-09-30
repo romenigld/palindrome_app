@@ -1,13 +1,16 @@
 require 'sinatra'
 
 get '/' do
-  erb :index, :layout => :page
+  @title = 'Home'
+  erb :index
 end
 
 get '/about' do
-  erb :about, :layout => :page
+  @title = 'About'
+  erb :about
 end
 
 get '/palindrome' do
-  erb :palindrome, :layout => :page
+  @title = 'Palindrome Detector'
+  erb :palindrome
 end
