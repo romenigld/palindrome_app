@@ -13,6 +13,7 @@
     </a>
     <div class="container">
       <%= erb :navigation %>
+      <%= Time.now.utc.to_s %>
       <div class="content">
         <%= yield %>
       </div>
